@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Darkmode } from "../Darkmode";
 
 const navigation = [
   { name: "Mars Rover", href: "#", current: false },
@@ -14,7 +15,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="">
       <div className="mx-auto max-w-6xl px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -33,22 +34,25 @@ export const Navbar = () => {
               />
             </svg>
 
-            <span className="text-2xl font-bold">AstroApp</span>
-          </div>
-          {/* menu */}
-          <div className="hidden md:flex">
-            {navigation.map((item) => (
-              <a
-                className="p-3 hover:text-emerald-700"
-                key={item.name}
-                href={item.href}
-                aria-current={item.current ? "page" : undefined}
-              >
-                {item.name}
-              </a>
-            ))}
+            <span className="dark:text-white text-2xl font-bold">AstroApp</span>
           </div>
 
+          {/* menu */}
+          <div className="flex">
+            <div className="hidden md:flex mr-10">
+              {navigation.map((item) => (
+                <a
+                  className="dark:text-white p-3 hover:text-emerald-700"
+                  key={item.name}
+                  href={item.href}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+            <Darkmode />
+          </div>
           {/* mobile button */}
           <div className="md:hidden">
             <button onClick={menuToggle}>
@@ -59,7 +63,7 @@ export const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 text-black"
+                  class="dark:text-white w-6 h-6 text-black"
                 >
                   <path
                     stroke-linecap="round"
@@ -91,7 +95,7 @@ export const Navbar = () => {
       <div className={isActive ? "" : "hidden"}>
         {navigation.map((item) => (
           <a
-            className="block p-2 px-4 text-sm hover:text-emerald-700 hover:bg-slate-200"
+            className="dark:text-white block p-2 px-4 text-sm hover:text-emerald-700 hover:bg-slate-200 dark:hover:bg-zinc-800"
             key={item.name}
             href={item.href}
             aria-current={item.current ? "page" : undefined}

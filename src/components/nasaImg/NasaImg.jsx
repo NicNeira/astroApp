@@ -36,10 +36,10 @@ export const NasaImg = () => {
 
   return (
     <div className="">
-      {/* Titulo */}
-      <h1 className="text-4xl text-center mt-5">{dataApi.title}</h1>
+      <h1 className="dark:text-white text-4xl text-center pt-5">
+        {dataApi.title}
+      </h1>
       {/* imagen */}
-      {/* Date */}
       <div className="w-2/3 mx-auto">
         <img
           className="mx-auto max-w-full h-auto rounded-lg mt-5"
@@ -47,14 +47,15 @@ export const NasaImg = () => {
         />
       </div>
       <div className="mx-auto max-w-5xl flex justify-center p-1 mb-5 ">
-        <p className="mr-3">{dataApi.date}</p>
+        {/* Date */}
+        <p className="dark:text-white mr-3">{dataApi.date}</p>
         {/* copyright */}
-        <p className="mr-3">{dataApi.copyright}</p>
+        <p className="dark:text-white mr-3">{dataApi.copyright}</p>
       </div>
-      <p className="mx-auto max-w-5xl text-center px-10 mb-5">
+      {/* Descripcion */}
+      <p className="dark:text-white mx-auto max-w-5xl text-center px-10 mb-5">
         {dataApi.explanation}
       </p>
-      {/* Descripcion */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="mx-auto max-w-6xl px-8 mt-10">
+    <div className=" mx-auto max-w-6xl px-8 mt-10">
       <div className="flex justify-center">
         <a href="#!" class="mr-9 text-gray-800">
           <svg
@@ -10,7 +10,7 @@ export const Footer = () => {
             focusable="false"
             data-prefix="fab"
             data-icon="linkedin-in"
-            class="svg-inline--fa fa-linkedin-in w-7 h-7"
+            class="dark:text-white svg-inline--fa fa-linkedin-in w-7 h-7"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -27,7 +27,7 @@ export const Footer = () => {
             focusable="false"
             data-prefix="fab"
             data-icon="github"
-            class="svg-inline--fa fa-github w-7 h-7"
+            class="dark:text-white svg-inline--fa fa-github w-7 h-7"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
@@ -40,7 +40,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className="flex items-center justify-between">
-        <span>© 2022 Nicolas Neira</span>
+        <span className="dark:text-white">© 2022 Nicolas Neira</span>
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export const Footer = () => {
             />
           </svg>
 
-          <span className="text-2xl font-bold">AstroApp</span>
+          <span className="dark:text-white text-2xl font-bold">AstroApp</span>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import { Navbar } from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark:bg-zinc-900">
       <Navbar />
       <NasaImg />
       {/* <Hero /> */}
