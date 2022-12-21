@@ -1,0 +1,6 @@
+
+.backgroundNasa {
+  background-image: url('./assets/img/low-angle-shot-mesmerizing-starry-sky.jpg');
+  opacity: 0.3;
+  z-index: -1;
+}
