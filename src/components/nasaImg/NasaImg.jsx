@@ -59,13 +59,13 @@ export const NasaImg = () => {
 
   return (
     <div className="">
-      <h1 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-extrabold sm:text-4xl  text-center pt-5">
+      <h1 className=" text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-extrabold sm:text-4xl  text-center py-5">
         {dataApi.title}
       </h1>
       {/* imagen */}
       <div className="w-2/3 mx-auto">
         <img
-          className="mx-auto max-w-full h-auto rounded-lg mt-5"
+          className="mx-auto max-w-full h-auto rounded-lg"
           src={dataApi.url}
         />
       </div>
