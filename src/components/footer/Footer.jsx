@@ -6,6 +6,7 @@ export const Footer = () => {
       <div className="flex justify-center">
         <a
           href="https://www.linkedin.com/in/nicolas-neira-lopez/"
+          target="_blank"
           className="mr-9  hover:bg-blue-400 dark:hover:bg-blue-900 hover:rounded-full hover:border-collapse"
         >
           <svg
@@ -26,6 +27,7 @@ export const Footer = () => {
         </a>
         <a
           href="https://github.com/NicNeira"
+          target="_blank"
           className="hover:bg-blue-400 dark:hover:bg-blue-900 hover:rounded-full hover:border-collapse "
         >
           <svg
