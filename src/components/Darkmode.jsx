@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import ReactSwitch from "react-switch";
 
 export const Darkmode = () => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState("");
   const root = window.document.documentElement;
   const lightTheme = "light";
   const darkTheme = "dark";
@@ -39,15 +39,18 @@ export const Darkmode = () => {
 
   return (
     <div className="flex items-center">
-      <button onClick={handleChange}>
-        {checked ? (
+      <button
+        onClick={handleChange}
+        className=" p-2 rounded-full bg-blue-800  shadow-sm"
+      >
+        {localStorage.getItem("theme") === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="#facc15"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6 dark:text-white"
+            className="w-5 h-5 text-yellow-400"
           >
             <path
               strokeLinecap="round"
@@ -58,11 +61,11 @@ export const Darkmode = () => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="#facc15"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-5 h-5 dark:text-white"
+            className="w-5 h-5 text-yellow-400"
           >
             <path
               strokeLinecap="round"

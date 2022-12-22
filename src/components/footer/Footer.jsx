@@ -2,15 +2,18 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className=" mx-auto max-w-6xl px-8 mt-10">
+    <div className=" mx-auto max-w-6xl px-8 py-10">
       <div className="flex justify-center">
-        <a href="#!" className="mr-9 text-gray-800">
+        <a
+          href="https://www.linkedin.com/in/nicolas-neira-lopez/"
+          className="mr-9  hover:bg-blue-400 dark:hover:bg-blue-900 hover:rounded-full hover:border-collapse"
+        >
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
             data-icon="linkedin-in"
-            className="dark:text-white svg-inline--fa fa-linkedin-in w-7 h-7"
+            className="dark:text-white svg-inline--fa fa-linkedin-in w-7 h-7 m-2"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -21,13 +24,16 @@ export const Footer = () => {
             ></path>
           </svg>
         </a>
-        <a href="#!" className="text-gray-800">
+        <a
+          href="https://github.com/NicNeira"
+          className="hover:bg-blue-400 dark:hover:bg-blue-900 hover:rounded-full hover:border-collapse "
+        >
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fab"
             data-icon="github"
-            className="dark:text-white svg-inline--fa fa-github w-7 h-7"
+            className=" dark:text-white svg-inline--fa fa-github w-7 h-7 m-2 "
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
@@ -39,8 +45,10 @@ export const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="flex items-center justify-between">
-        <span className="dark:text-white">© 2022 Nicolas Neira</span>
+      <div className="flex items-center justify-between mt-5 sm:">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-sm sm:text-base font-extrabold">
+          © 2022 Nicolas Neira
+        </span>
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +56,7 @@ export const Footer = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-10 h-10 text-blue-700"
+            className="w-6 sm:w-10 sm:h-10 text-blue-700"
           >
             <path
               strokeLinecap="round"
@@ -57,7 +65,9 @@ export const Footer = () => {
             />
           </svg>
 
-          <span className="dark:text-white text-2xl font-bold">AstroApp</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-base sm:text-2xl font-extrabold">
+            AstroApp
+          </span>
         </div>
       </div>
     </div>

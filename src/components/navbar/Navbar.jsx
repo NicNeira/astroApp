@@ -34,7 +34,9 @@ export const Navbar = () => {
               />
             </svg>
 
-            <span className="dark:text-white text-2xl font-bold">AstroApp</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl font-extrabold">
+              AstroApp
+            </span>
           </div>
 
           {/* menu */}
