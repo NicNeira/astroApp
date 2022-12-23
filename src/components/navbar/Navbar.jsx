@@ -98,14 +98,14 @@ export const Navbar = () => {
       {/* mobile menu items */}
       <div className={isActive ? "" : "hidden"}>
         {navigation.map((item) => (
-          <a
+          <Link
             className="dark:text-white block p-2 px-4 text-sm hover:text-emerald-700 hover:bg-slate-200 dark:hover:bg-zinc-800"
             key={item.name}
-            href={item.href}
+            to={item.href}
             aria-current={item.current ? "page" : undefined}
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>
