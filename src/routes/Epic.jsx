@@ -3,7 +3,7 @@ import { Navbar } from "../components/navbar/Navbar";
 
 export const Epic = () => {
   return (
-    <div className="text-white h-screen flex justify-center items-center">
+    <div className="text-black dark:text-white h-screen flex justify-center items-center">
       Epic
     </div>
   );
