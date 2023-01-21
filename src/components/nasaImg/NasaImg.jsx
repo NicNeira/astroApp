@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export const NasaImg = () => {
-  const [dataApi, setData] = useState(null);
+  const [dataImgDay, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -12,8 +12,8 @@ export const NasaImg = () => {
     async function fetchData() {
       try {
         const response = await fetch(baseUrl);
-        const data = await response.json();
-        setData(data);
+        const dataImgDay = await response.json();
+        setData(dataImgDay);
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -24,7 +24,7 @@ export const NasaImg = () => {
     fetchData();
   }, []); // Sólo se ejecuta una vez, al montar el componente
 
-  console.log(dataApi);
+  console.log(dataImgDay);
 
   if (loading) {
     return (
@@ -60,24 +60,24 @@ export const NasaImg = () => {
   return (
     <div className="">
       <h1 className=" text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-extrabold sm:text-4xl  text-center py-5">
-        {dataApi.title}
+        {dataImgDay.title}
       </h1>
       {/* imagen */}
       <div className="w-2/3 mx-auto">
         <img
           className="mx-auto max-w-full h-auto rounded-lg"
-          src={dataApi.url}
+          src={dataImgDay.url}
         />
       </div>
       <div className="mx-auto max-w-5xl flex justify-center p-1 mb-5 ">
         {/* Date */}
-        <p className="dark:text-white mr-3">{dataApi.date}</p>
+        <p className="dark:text-white mr-3">{dataImgDay.date}</p>
         {/* copyright */}
-        <p className="dark:text-white mr-3">{dataApi.copyright}</p>
+        <p className="dark:text-white mr-3">{dataImgDay.copyright}</p>
       </div>
       {/* Descripcion */}
       <p className="dark:text-white mx-auto max-w-5xl text-center px-10 mb-5">
-        {dataApi.explanation}
+        {dataImgDay.explanation}
       </p>
     </div>
   );
