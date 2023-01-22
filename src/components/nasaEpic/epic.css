@@ -1,0 +1,37 @@
+
+.custom-dinamyc-size {
+  width : 300px;
+  height: 300px;
+}
+/* @media (max-width: 500px) {
+    .custom-dinamyc-size {
+      width : 200px;
+      height: 200px;
+    }
+} */
+/* @media (max-width: 500px) {
+  .custom-dinamyc-size {
+    width : 200px;
+    height: 200px;
+  }
+} */
+
+/* Media query para pantallas medianas */
+@media (min-width: 600px) and (max-width: 900px) {
+  .custom-dinamyc-size {
+      /* propiedades CSS adicionales */
+      width : 500px;
+      height: 500px;
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 900px) {
+  .custom-dinamyc-size {
+      /* propiedades CSS adicionales */
+      width : 600px;
+      height: 600px;
+  }
+}
+
+

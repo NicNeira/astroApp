@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Darkmode } from "../Darkmode";
 
@@ -15,6 +15,7 @@ export const Navbar = () => {
     setActive(!isActive);
   };
 
+  console.log("isActive", isActive);
   return (
     <nav className="">
       <div className="mx-auto max-w-6xl px-8">
@@ -46,7 +47,7 @@ export const Navbar = () => {
             <div className="hidden md:flex mr-10">
               {navigation.map((item) => (
                 <Link
-                  className="dark:text-white p-3 hover:text-emerald-700"
+                  className="text-white p-3 hover:text-emerald-700"
                   key={item.name}
                   to={item.href}
                   aria-current={item.current ? "page" : undefined}
@@ -55,7 +56,7 @@ export const Navbar = () => {
                 </Link>
               ))}
             </div>
-            <Darkmode />
+            {/* <Darkmode /> */}
           </div>
           {/* mobile button */}
           <div className="md:hidden">

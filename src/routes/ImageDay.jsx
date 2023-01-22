@@ -30,7 +30,7 @@ export const ImageDay = () => {
     return (
       <div className="h-screen flex justify-center items-center" role="status">
         <svg
-          class="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-green-500"
+          className="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-green-500"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export const ImageDay = () => {
             fill="currentFill"
           />
         </svg>
-        <span class="sr-only">Loading...</span>
+        <span className="sr-only">Loading...</span>
       </div>
     );
   }
@@ -71,12 +71,12 @@ export const ImageDay = () => {
       </div>
       <div className="mx-auto max-w-5xl flex justify-center p-1 mb-5 ">
         {/* Date */}
-        <p className="dark:text-white mr-3">{dataApi.date}</p>
+        <p className="text-white mr-3">{dataApi.date}</p>
         {/* copyright */}
-        <p className="dark:text-white mr-3">{dataApi.copyright}</p>
+        <p className="text-white mr-3">{dataApi.copyright}</p>
       </div>
       {/* Descripcion */}
-      <p className="dark:text-white mx-auto max-w-5xl text-center px-10 mb-5">
+      <p className="text-white mx-auto max-w-5xl text-center px-10 mb-5">
         {dataApi.explanation}
       </p>
     </div>
