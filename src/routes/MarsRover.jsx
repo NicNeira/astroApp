@@ -26,8 +26,6 @@ export const MarsRover = () => {
     fetchData();
   }, []); // Sólo se ejecuta una vez, al montar el componente
 
-  console.log("dataMars", dataMars.photos);
-
   return (
     dataMars && (
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
