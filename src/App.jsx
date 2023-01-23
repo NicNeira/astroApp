@@ -6,7 +6,7 @@ import { ParticleBackground } from "./components/ParticleBackground";
 import { Epic } from "./routes/Epic";
 import { Home } from "./routes/Home";
 import { ImageDay } from "./routes/ImageDay";
-import { Jwst } from "./routes/Jwst";
+import { MarsRover } from "./routes/MarsRover";
 import { NoMatch } from "./routes/NoMatch";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="imageday" element={<ImageDay />} />
-        <Route path="jwst" element={<Jwst />} />
+        <Route path="mars-rover" element={<MarsRover />} />
         <Route path="epic" element={<Epic />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>

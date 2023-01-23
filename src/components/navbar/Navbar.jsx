@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Darkmode } from "../Darkmode";
 
 const navigation = [
-  { name: "James Webb", href: "/jwst", current: false },
+  { name: "Mars Rover", href: "/mars-rover", current: false },
   { name: "Image of day", href: "/imageday", current: true },
   { name: "EPIC", href: "/epic", current: false },
 ];

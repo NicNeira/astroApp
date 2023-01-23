@@ -5,6 +5,7 @@ import { Loader } from "../Loader";
 import "./epic.css";
 
 export const NasaEpic = () => {
+  // set data
   const [dataEpic, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
